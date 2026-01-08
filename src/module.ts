@@ -15,5 +15,19 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
+    addComponent({
+      name: 'LinearWaveformImage',
+      filePath: resolver.resolve('runtime/components/LinearWaveformImage.vue'),
+    })
+
+    addComponent({
+      name: 'PolarWaveformImage',
+      filePath: resolver.resolve('runtime/components/PolarWaveformImage.vue'),
+    })
+
+    addComponent({
+      name: 'WaveformImage',
+      filePath: resolver.resolve('runtime/components/WaveformImage.vue'),
+    })
   },
 })
