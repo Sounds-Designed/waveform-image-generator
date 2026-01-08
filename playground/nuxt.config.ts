@@ -2,7 +2,7 @@ import ui from "@nuxt/ui/vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  modules: ['../src/module', "@nuxt/eslint", "@nuxt/ui",
+  modules: ['../src/module', "@nuxt/eslint", "@nuxt/image", "@nuxt/ui",
     "@vueuse/nuxt"],
   imports: { scan: true },
   compatibilityDate: "2025-12-15",
