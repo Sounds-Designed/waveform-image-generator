@@ -1,15 +1,21 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { addComponent, defineNuxtModule, addPlugin, createResolver, useRuntimeConfig } from '@nuxt/kit'
+import type { ModuleOptions } from 'nuxt/schema'
+
+export type * from './runtime/types'
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+export interface WaveformImageGeneratorOptions extends ModuleOptions {
+  enabled?: boolean;
+}
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<WaveformImageGeneratorOptions>({
   meta: {
     name: '@sounds-designed/waveform-image-generator',
     configKey: 'waveformImageGenerator',
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
+  defaults: {
+    enabled: true,
+  },
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
 
