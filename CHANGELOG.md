@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/Sounds-Designed/waveform-image-generator/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Lint issues again ([b5f2920](https://github.com/Sounds-Designed/waveform-image-generator/commit/b5f2920))
+- Update README.md ([cc82dbf](https://github.com/Sounds-Designed/waveform-image-generator/commit/cc82dbf))
+
+### 🏡 Chore
+
+- **release:** V0.0.2 ([0dc32da](https://github.com/Sounds-Designed/waveform-image-generator/commit/0dc32da))
+
+### ❤️ Contributors
+
+- Alex Scott ([@codetheorist](https://github.com/codetheorist))
+
 ## v0.0.2
 
 
