@@ -3,7 +3,7 @@ import { getAudioBufferFromURL } from "@sounds-designed/audio-to-image-utils";
 import AudioFile from "~/assets/audio/test-kick-1.wav";
 import type { SelectItem, TabsItem  } from "@nuxt/ui";
 import { CustomizationOptionsSchema, type CustomizationOptions } from "~/types/schemas";
-import type { GradientFillAttributes, WaveformComponentComponentType } from "../../src/module";
+import type { WaveformComponentComponentType } from "../../src/module";
 
 const route = useRoute()
 const router = useRouter()
@@ -60,13 +60,13 @@ const options = reactive<CustomizationOptions>({ ..._defaultOptions });
 
 const audioBuffer: Ref<AudioBuffer | null> = ref(null);
 
-const fill: Ref<string | GradientFillAttributes[]> = ref([
-  { offset: 0, style: "stop-color:rgb(0,255,10);stop-opacity:1.00" },
-  { offset: 25, style: "stop-color:rgb(0,188,212);stop-opacity:0.70" },
-  { offset: 50, style: "stop-color:rgb(238,130,238);stop-opacity:1.00" },
-  { offset: 75, style: "stop-color:rgb(103,58,183);stop-opacity:0.70" },
-  { offset: 100, style: "stop-color:rgb(233,30,99);stop-opacity:1.00" },
-]);
+// const fill: Ref<string | GradientFillAttributes[]> = ref([
+//   { offset: 0, style: "stop-color:rgb(0,255,10);stop-opacity:1.00" },
+//   { offset: 25, style: "stop-color:rgb(0,188,212);stop-opacity:0.70" },
+//   { offset: 50, style: "stop-color:rgb(238,130,238);stop-opacity:1.00" },
+//   { offset: 75, style: "stop-color:rgb(103,58,183);stop-opacity:0.70" },
+//   { offset: 100, style: "stop-color:rgb(233,30,99);stop-opacity:1.00" },
+// ]);
 
 // const fillMode: Ref<"solid" | "gradient"> = computed(() => {
 //   return typeof fill.value === "string" ? "solid" : "gradient";
